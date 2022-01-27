@@ -1,3 +1,6 @@
+using CLIHelper;
+using System.Text;
+
 namespace CLIReader;
 
 public abstract class Reader<TEntity> : IReader<TEntity>
@@ -14,8 +17,8 @@ public abstract class Reader<TEntity> : IReader<TEntity>
 		, IOutput output
 		, IValidator textValidator)
 	{
-		this.Input = input;
-		this.Output = output;
+		Input = input;
+		Output = output;
 		this.textValidator = textValidator;
 	}
 

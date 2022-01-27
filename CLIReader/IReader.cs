@@ -1,3 +1,5 @@
+using CLIHelper;
+
 namespace CLIReader;
 
 public interface IReader<TType>
