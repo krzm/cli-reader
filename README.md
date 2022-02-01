@@ -1,2 +1,2 @@
 # CLIReader
-Cancelable read line helper for Console Line Interface.
+Console Line Interface input readers with some reading program/logic in it.
