@@ -27,7 +27,7 @@
 
 	<ItemGroup>
 		<Reference Include="CLIHelper">
-			<HintPath>..\..\build\Build\cli-helper\CLIHelper\CLIHelper.dll</HintPath>
+			<HintPath>..\..\..\Build\cli-helper\CLIHelper\CLIHelper.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 </Project>
