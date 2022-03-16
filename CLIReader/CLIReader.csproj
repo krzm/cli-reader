@@ -6,16 +6,26 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+		<PackageReference Include="Unity.Abstractions" Version="5.11.7" />
+	</ItemGroup>
+
 	<!--Debug refs-->
   <!-- <ItemGroup>
     <Reference Include="CLIHelper">
 			<HintPath>..\..\cli-helper\CLIHelper\bin\Debug\net6.0\CLIHelper.dll</HintPath>
     </Reference>
+    <Reference Include="DIHelper">
+			<HintPath>..\..\di-helper\DIHelper\bin\Debug\net6.0\DIHelper.dll</HintPath>
+		</Reference>
   </ItemGroup> -->
 	<!--Release refs-->
   <ItemGroup>
     <Reference Include="CLIHelper">
       <HintPath>..\..\..\Build\cli-helper\CLIHelper\CLIHelper.dll</HintPath>
     </Reference>
+    <Reference Include="DIHelper">
+			<HintPath>..\..\..\Build\di-helper\DIHelper\DIHelper.dll</HintPath>
+		</Reference>
   </ItemGroup>
 </Project>
