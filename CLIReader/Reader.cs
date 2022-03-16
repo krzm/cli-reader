@@ -3,7 +3,8 @@ using System.Text;
 
 namespace CLIReader;
 
-public abstract class Reader<TEntity> : IReader<TEntity>
+public abstract class Reader<TEntity> 
+	: IReader<TEntity>
 {
 	private const string ValidationError = "Invalid input.";
 	private const string ReaderExit = "Reader Escaped.";
@@ -22,7 +23,7 @@ public abstract class Reader<TEntity> : IReader<TEntity>
 		this.textValidator = textValidator;
 	}
 
-	public TEntity Read(ReadConfig config)
+	public TEntity? Read(ReadConfig config)
 	{
 		Output.WriteLine(ProduceDesc(config));
 		ReadData data;
@@ -75,12 +76,12 @@ public abstract class Reader<TEntity> : IReader<TEntity>
 		return data;
 	}
 
-	protected virtual TEntity GetValueOnEscape()
+	protected virtual TEntity? GetValueOnEscape()
 	{
 		return default;
 	}
 
-	protected virtual TEntity GetValueOnEnter()
+	protected virtual TEntity? GetValueOnEnter()
 	{
 		return default;
 	}

@@ -6,9 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-   <ItemGroup>
+	<!--Debug refs-->
+  <!-- <ItemGroup>
     <Reference Include="CLIHelper">
-        <HintPath>..\..\..\Build\cli-helper\CLIHelper\CLIHelper.dll</HintPath>
+			<HintPath>..\..\cli-helper\CLIHelper\bin\Debug\net6.0\CLIHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup> -->
+	<!--Release refs-->
+  <ItemGroup>
+    <Reference Include="CLIHelper">
+      <HintPath>..\..\..\Build\cli-helper\CLIHelper\CLIHelper.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
