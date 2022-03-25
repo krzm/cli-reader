@@ -19,6 +19,7 @@
 			<HintPath>..\..\di-helper\DIHelper\bin\Debug\net6.0\DIHelper.dll</HintPath>
 		</Reference>
   </ItemGroup> -->
+  
 	<!--Release refs-->
   <ItemGroup>
     <Reference Include="CLIHelper">
