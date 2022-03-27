@@ -5,10 +5,10 @@ using Unity.Injection;
 
 namespace CLIReader;
 
-public class AppInput 
+public class CLIReaderSet 
     : UnityDependencySet
 {
-    public AppInput(
+    public CLIReaderSet(
         IUnityContainer container)
         : base(container)
     {
@@ -16,16 +16,10 @@ public class AppInput
 
     public override void Register()
     {
-        RegisterInput();
+        Container
+            .RegisterSingleton<ICancelableReadLine, CancelableReadLine>();
         RegisterInputValidators();
         RegisterInputReaders();
-    }
-
-    private void RegisterInput()
-    {
-        Container
-            .RegisterSingleton<ICancelableReadLine, CancelableReadLine>()
-            .RegisterSingleton<IInput, Input>();
     }
 
     private void RegisterInputValidators()
