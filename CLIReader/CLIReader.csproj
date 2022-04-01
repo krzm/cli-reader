@@ -12,21 +12,21 @@
 
 	<!--Debug refs-->
   <!-- <ItemGroup>
-    <Reference Include="CLIHelper">
-			<HintPath>..\..\cli-helper\CLIHelper\bin\Debug\net6.0\CLIHelper.dll</HintPath>
-    </Reference>
     <Reference Include="DIHelper">
 			<HintPath>..\..\di-helper\DIHelper\bin\Debug\net6.0\DIHelper.dll</HintPath>
 		</Reference>
+    <Reference Include="CLIHelper">
+			<HintPath>..\..\cli-helper\CLIHelper\bin\Debug\net6.0\CLIHelper.dll</HintPath>
+    </Reference>
   </ItemGroup> -->
   
 	<!--Release refs-->
   <ItemGroup>
-    <Reference Include="CLIHelper">
-      <HintPath>..\..\..\Build\cli-helper\CLIHelper\CLIHelper.dll</HintPath>
-    </Reference>
     <Reference Include="DIHelper">
 			<HintPath>..\..\..\Build\di-helper\DIHelper\DIHelper.dll</HintPath>
 		</Reference>
+    <Reference Include="CLIHelper">
+      <HintPath>..\..\..\Build\cli-helper\CLIHelper\CLIHelper.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
